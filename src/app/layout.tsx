@@ -1,7 +1,8 @@
 import './globals.css';
-import NavButton from '@/components/containers/NavButton';
 import AccountButton from '../components/containers/AccountButton';
 import CartButton from '@/components/containers/CartButton';
+import DesignWatchButton from '@/components/containers/DesignWatchButton';
+import { colors } from '@/styles/colors';
 
 export default function RootLayout({
 	children,
@@ -14,7 +15,7 @@ export default function RootLayout({
 				<header className="flex justify-between items-center pt-[14px] pl-[165px] pr-[60px] gap-[40px]">
 					<div className="flex justify-between items-center flex-grow">
 						<button>
-							<img src="/logo.jpg" />
+							<img src="/images/logo.jpg" />
 						</button>
 
 						<nav>
@@ -28,7 +29,7 @@ export default function RootLayout({
 						</nav>
 					</div>
 					<div className="flex gap-[25px]">
-						<NavButton />
+						<DesignWatchButton width={175} height={55} textColor="white" backgroundColor={colors.primary} />
 						<AccountButton />
 						<CartButton />
 					</div>

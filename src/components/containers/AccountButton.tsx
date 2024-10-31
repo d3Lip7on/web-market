@@ -3,7 +3,7 @@
 export default function AccountButton() {
 	return (
 		<button>
-			<img src="/account.svg" />
+			<img src="/images/account.svg" />
 		</button>
 	);
 }
